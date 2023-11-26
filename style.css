@@ -1,0 +1,156 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.modal-content {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    display: block;
+    height: 50vh; /* Default height */
+    transition: height 0.5s; /* Smooth transition to full-screen size */
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.collection{
+    border: 1px solid;
+    color: rgb(227, 207, 230);
+    margin: 0px 2% 0px 2%;  
+}
+
+.collectiontop{
+    border: 1px solid;
+    color: rgb(227, 207, 230);
+    margin: 25px 2% 0px 2%;  
+}
+
+.scrolling-container {
+    /* width: 100%; */
+    white-space: nowrap;
+    overflow-x: auto; /* Enable horizontal scrollbar */
+    white-space: nowrap;
+    border: 1px solid #ccc;
+    margin: 0px 2% 0px 2%;
+    display: flex;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Initial position off the viewport */
+    }
+    100% {
+        transform: translateX(-100%); /* End position off the viewport */
+    }
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+.textbox {
+    width: 20vh;
+    height: 50vh;
+    text-align: left;
+    box-sizing: border-box;
+    margin: 3px;
+    color: white;
+    overflow: hidden; /* Allow content to scroll if it exceeds the box's height */
+
+    white-space: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+    /*font-family: 'Castoro', serif;*/
+
+}
+
+body {
+    min-height: 100%;
+    background: rgb(34, 34, 34);
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(238, 238, 238);
+    text-align: left;
+    margin: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 5px;
+    color: white;
+}
+
+img {
+    width: auto;
+    height: 50vh;
+  }
+
+video {
+    width: auto;
+    height: 50vh;
+}
+
+p {
+    font-size: 16px;
+    color: white;
+    padding: 2px;
+}
+
+.nocollection {
+    margin-left: 15px;
+    font-size: 16px;
+    color: white;
+}
+
+.nocollectionlast {
+    margin-left: 15px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.incollection {
+    color: #d0e0b8;
+    font-size: 18px;
+    padding: 2px;
+}
+
+.back {
+    margin-left: 5px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    bottom: 0; /* Stick to the bottom */
+}

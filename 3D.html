@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>3D and Animation</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <a class="back" href="index.html">Back to all projects</a>
+        <h1>3D Animation</h1>
+            <div class="collection">
+                <h2>Taimi, 2023</h2>
+            </div>
+            <div class="collection">
+                <p>Character design and exploration. Animation tests done with Maya.</p>
+            </div>
+            <div class="scrolling-container">
+                <img src="./images/taimi1.png" alt="Plant character" class="select" onclick="openModal('./images/taimi1.png')">
+                <img src="./images/taimiface1.png" alt="head of the plant character" class="select" onclick="openModal('./images/taimiface1.png')">
+                <img src="./images/taimibath.png" alt="plant character bathing" class="select" onclick="openModal('./images/taimibath.png')">
+                <img src="./images/taimibug.jpg" alt="bug on the arm of the plant character" class="select" onclick="openModal('./images/taimibug.jpg')">
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/taimijaotokka1.mp4" type="video/mp4">
+                </video>
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/taimitest.mp4" type="video/mp4">
+                </video>
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/taimiwalkcycle.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="collection">
+                <h2>Digital bakery, 2023</h2>
+            </div>
+            <div class="collection">
+                <p>Baked in Blender and After Effects.</p>
+            </div>
+            <div class="scrolling-container"> 
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/cakelu1.mp4" type=video/mp4>
+                </video>
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/cakebd2.mp4" type=video/mp4>
+                </video>
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/cakemask1.mp4" type=video/mp4>
+                </video>
+                <img src="./images/cakemask.png" alt="3D birthday cake" class="select" onclick="openModal('./images/cakemask.png')">
+            </div>
+            <div class="collection">
+                <h2>Graffathon Visuals, 2023</h2>
+            </div>
+            <div class="scrolling-container">
+                <!-- <div class="textbox">
+                    <p>Little animations I've made using Blender and After Effects. Enjooiasidfhiash iosdufhiahsdf  oiasuef i iefg ui.</p>
+                </div> -->
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/graffathon1.mp4" type="video/mp4">
+                </video>
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/graffathon2.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="collection">
+                <h2>Animated Illustrations, 2023</h2>
+            </div>
+            <div class="scrolling-container">
+                <!-- <div class="textbox">
+                    <p>Little animations I've made using Blender and After Effects. Enjooiasidfhiash iosdufhiahsdf  oiasuef i iefg ui.</p>
+                </div> -->
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/caterpillar.mp4" type="video/mp4">
+                </video>
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/plant1.mp4" type="video/mp4">
+                </video>
+                <video width="auto" height="50vh" controls loop>
+                    <source src="./videos/jellyfish.mp4" type="video/mp4">
+                </video>
+            </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+        <script src="script.js"></script>
+        <footer>
+            <p></p>
+            <p class="footer">&copy; 2023 Jonna Eloranta</p>
+            <!-- Add footer content or links here -->
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <title>Your Sketch</title>
+</head>
+<body>
+    <a class="back" href="index.html">Back to all projects</a>
+    <p>More sketches coming soon...but enjoy these for now :)</p>
+    <div id="sketch1"></div>
+    <div id="sketch2"></div>
+    <script>
+        let sketch1 = function(p) {
+            let y;
+            let d = 20;
+            let s1 = 20;
+
+            p.setup = function() {
+                p.createCanvas(400, 400);
+                p.background(220);
+            }
+
+            p.draw = function() {
+                p.background(220); // Clear the background on each frame
+                for (let x = 0 + d; x < p.width; x += d) {
+                    for  (let y = 0 + d; y < p.height; y += d+60) {
+                        // Use sin or any other function to vary the size over time
+                        let size = s1 + 2 * p.sin((p.frameCount + x) * 0.03);
+                        let size1 = x + 150 * p.sin((p.frameCount + y) * 0.01);
+                        p.stroke(5);
+                        p.fill(250);
+                        p.ellipse(x+100, y, size+30, size1);
+                    }
+                }
+            }
+        };
+
+        let sketch2 = function(p) {
+            let y;
+            let d = 20;
+            let s1 = 20;
+
+            p.setup = function() {
+                p.createCanvas(400, 400);
+                p.background(220);
+            }
+
+            p.draw = function() {
+                p.background(220); // Clear the background on each frame
+                for (let x = 0 + d; x < p.width; x += d) {
+                    for  (let y = 0 + d; y < p.height; y += d) {
+                        // Use sin or any other function to vary the size over time
+                        let size = s1 + 20 * p.sin((p.frameCount + x) * 0.03); // Adjust the multiplier to control the speed of the animation
+                        p.noStroke();
+                        p.fill(25);
+                        p.circle(x, y, size);
+                    }
+                }
+            }
+        };
+
+        new p5(sketch1, 'sketch1');
+        new p5(sketch2, 'sketch2');
+    </script>
+    <footer>
+        <p></p>
+        <p class="footer">&copy; 2023 Jonna Eloranta</p>
+        <!-- Add footer content or links here -->
+    </footer>
+</body>
+</html>
