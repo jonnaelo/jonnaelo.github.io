@@ -270,17 +270,6 @@ svg:hover .svg-path-1 {
     }
    }
 
-/*other*/
-
-.scroll-up-container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 /* Content pages*/
 
 h1 {
@@ -366,6 +355,8 @@ h1 {
     object-fit: cover; 
 }
 
+/*message box / contact page*/
+
 .list-item {
     display: flex;
     align-items: left;
@@ -401,4 +392,15 @@ input {
 #send:hover {
     background-color: rgb(255, 255, 255);
     color: black;
+}
+
+/*other elements*/
+
+.scroll-up-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
