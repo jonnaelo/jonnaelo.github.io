@@ -15,17 +15,145 @@
         </a>
 
         <p class="introduction-text">
-            Send me an email: jonna.eloranta99@gmail.com
+            Leave a message on this <span class="in-text-bold">book of visitors</span> and add your website. You can also send me an email: jonna.eloranta99@gmail.com
         </p>
         <p class="introduction-text-mobile">
-            Send me an email: jonna.eloranta99@gmail.com
+            Leave a message on this <span class="in-text-bold">book of visitors</span> and add your website. You can also send me an email: jonna.eloranta99@gmail.com
         </p>
-        <p class="introduction-text">
-            <a href="https://www.instagram.com/rakastakas/">Instagram</a>
-        </p>
-        <p class="introduction-text-mobile">
-            <a href="https://www.instagram.com/rakastakas/">Instagram</a>
-        </p>
+
+        <nav class="icons-buttons-container">
+            <div class="placeholder-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="61" viewBox="0 0 57 61" fill="none">
+                    <path d="M27.813 6.8921C21.5253 -0.448048 11.3311 -0.448048 5.04349 6.8921C-1.24413 14.2323 -1.24413 26.133 5.04349 33.4731L27.813 6.8921ZM16.6224 46.9904L28.0072 60.2809L50.7766 33.6999L39.3919 20.4093L16.6224 46.9904ZM5.04349 33.4731L16.6224 46.9904L39.3919 20.4093L27.813 6.8921L5.04349 33.4731Z" fill="black"/>
+                    <path d="M51.3842 32.9905C57.6719 25.6503 57.6719 13.7496 51.3842 6.40943C45.0966 -0.930716 34.9024 -0.930716 28.6148 6.40943L51.3842 32.9905ZM16.6223 20.4094L5.23756 33.7L28.007 60.281L39.3918 46.9905L16.6223 20.4094ZM28.6148 6.40943L16.6223 20.4094L39.3918 46.9905L51.3842 32.9905L28.6148 6.40943Z" fill="black"/>
+                    <path class="svg-path-1" d="M26.1866 8.79075C20.7972 2.49919 12.0593 2.49919 6.66988 8.79075C1.2805 15.0823 1.2805 25.2829 6.66988 31.5745L26.1866 8.79075ZM18.2488 45.0917L28.0072 56.4836L47.5239 33.6999L37.7655 22.308L18.2488 45.0917ZM6.66988 31.5745L18.2488 45.0917L37.7655 22.308L26.1866 8.79075L6.66988 31.5745Z" fill="#FBFBFB"/>
+                    <path class="svg-path-1" d="M49.7579 31.0918C55.1472 24.8003 55.1472 14.5996 49.7579 8.30808C44.3685 2.01652 35.6306 2.01652 30.2412 8.30808L49.7579 31.0918ZM18.2487 22.3081L8.49034 33.7L28.007 56.4837L37.7654 45.0918L18.2487 22.3081ZM30.2412 8.30808L18.2487 22.3081L37.7654 45.0918L49.7579 31.0918L30.2412 8.30808Z" fill="#FBFBFB"/>
+                </svg>
+            </div>
+            
+            <div class="message-input">
+                <input placeholder="nickname" type="text" id="nickname">
+                <input placeholder="message" type="text" id="message">
+            </div>
+
+            <button class="button-container" id="send" onclick="sendMessage()">Send</button>
+
+            <div class="placeholder-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="57" height="61" viewBox="0 0 57 61" fill="none">
+                    <path d="M27.813 6.8921C21.5253 -0.448048 11.3311 -0.448048 5.04349 6.8921C-1.24413 14.2323 -1.24413 26.133 5.04349 33.4731L27.813 6.8921ZM16.6224 46.9904L28.0072 60.2809L50.7766 33.6999L39.3919 20.4093L16.6224 46.9904ZM5.04349 33.4731L16.6224 46.9904L39.3919 20.4093L27.813 6.8921L5.04349 33.4731Z" fill="black"/>
+                    <path d="M51.3842 32.9905C57.6719 25.6503 57.6719 13.7496 51.3842 6.40943C45.0966 -0.930716 34.9024 -0.930716 28.6148 6.40943L51.3842 32.9905ZM16.6223 20.4094L5.23756 33.7L28.007 60.281L39.3918 46.9905L16.6223 20.4094ZM28.6148 6.40943L16.6223 20.4094L39.3918 46.9905L51.3842 32.9905L28.6148 6.40943Z" fill="black"/>
+                    <path class="svg-path-1" d="M26.1866 8.79075C20.7972 2.49919 12.0593 2.49919 6.66988 8.79075C1.2805 15.0823 1.2805 25.2829 6.66988 31.5745L26.1866 8.79075ZM18.2488 45.0917L28.0072 56.4836L47.5239 33.6999L37.7655 22.308L18.2488 45.0917ZM6.66988 31.5745L18.2488 45.0917L37.7655 22.308L26.1866 8.79075L6.66988 31.5745Z" fill="#FBFBFB"/>
+                    <path class="svg-path-1" d="M49.7579 31.0918C55.1472 24.8003 55.1472 14.5996 49.7579 8.30808C44.3685 2.01652 35.6306 2.01652 30.2412 8.30808L49.7579 31.0918ZM18.2487 22.3081L8.49034 33.7L28.007 56.4837L37.7654 45.0918L18.2487 22.3081ZM30.2412 8.30808L18.2487 22.3081L37.7654 45.0918L49.7579 31.0918L30.2412 8.30808Z" fill="#FBFBFB"/>
+                </svg>
+            </div>
+        </nav>
+
+        <div id="MessageDiv">
         </div>
+
+        <footer class="scroll-up-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
+                <path d="M13.0607 0.93934C12.4749 0.353553 11.5251 0.353553 10.9393 0.93934L1.3934 10.4853C0.807611 11.0711 0.807611 12.0208 1.3934 12.6066C1.97918 13.1924 2.92893 13.1924 3.51472 12.6066L12 4.12132L20.4853 12.6066C21.0711 13.1924 22.0208 13.1924 22.6066 12.6066C23.1924 12.0208 23.1924 11.0711 22.6066 10.4853L13.0607 0.93934ZM13.5 3L13.5 2L10.5 2L10.5 3L13.5 3Z" fill="black"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="57" height="61" viewBox="0 0 57 61" fill="none">
+                <path d="M27.813 6.8921C21.5253 -0.448048 11.3311 -0.448048 5.04349 6.8921C-1.24413 14.2323 -1.24413 26.133 5.04349 33.4731L27.813 6.8921ZM16.6224 46.9904L28.0072 60.2809L50.7766 33.6999L39.3919 20.4093L16.6224 46.9904ZM5.04349 33.4731L16.6224 46.9904L39.3919 20.4093L27.813 6.8921L5.04349 33.4731Z" fill="black"/>
+                <path d="M51.3842 32.9905C57.6719 25.6503 57.6719 13.7496 51.3842 6.40943C45.0966 -0.930716 34.9024 -0.930716 28.6148 6.40943L51.3842 32.9905ZM16.6223 20.4094L5.23756 33.7L28.007 60.281L39.3918 46.9905L16.6223 20.4094ZM28.6148 6.40943L16.6223 20.4094L39.3918 46.9905L51.3842 32.9905L28.6148 6.40943Z" fill="black"/>
+                <path class="svg-path-1" d="M26.1866 8.79075C20.7972 2.49919 12.0593 2.49919 6.66988 8.79075C1.2805 15.0823 1.2805 25.2829 6.66988 31.5745L26.1866 8.79075ZM18.2488 45.0917L28.0072 56.4836L47.5239 33.6999L37.7655 22.308L18.2488 45.0917ZM6.66988 31.5745L18.2488 45.0917L37.7655 22.308L26.1866 8.79075L6.66988 31.5745Z" fill="#FBFBFB"/>
+                <path class="svg-path-1" d="M49.7579 31.0918C55.1472 24.8003 55.1472 14.5996 49.7579 8.30808C44.3685 2.01652 35.6306 2.01652 30.2412 8.30808L49.7579 31.0918ZM18.2487 22.3081L8.49034 33.7L28.007 56.4837L37.7654 45.0918L18.2487 22.3081ZM30.2412 8.30808L18.2487 22.3081L37.7654 45.0918L49.7579 31.0918L30.2412 8.30808Z" fill="#FBFBFB"/>
+            </svg>
+        </footer>
+
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+
+            const firebaseConfig = {
+            apiKey: "AIzaSyB3P2yBhHtqmazQQ2b1fVLhFNqAwxOfs2c",
+            authDomain: "portfolio-b0457.firebaseapp.com",
+            databaseURL: "https://portfolio-b0457-default-rtdb.firebaseio.com",
+            projectId: "portfolio-b0457",
+            storageBucket: "portfolio-b0457.appspot.com",
+            messagingSenderId: "647958043256",
+            appId: "1:647958043256:web:52c5f70a11c742dc5f6b8d"
+            };
+        
+            const app = initializeApp(firebaseConfig);
+
+            import {getDatabase, ref, child, get, set, update, remove} from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js";
+            
+            
+            const db = getDatabase();
+
+            let nickname = document.getElementById('nickname');
+            let message = document.getElementById('message');
+            let send = document.getElementById('send');
+
+            let MessageDiv = document.getElementById('MessageDiv');
+            let messagenro = 1;
+
+            function AddData() {
+            set(ref(db, 'Messages/' + Date.now()), { // Use current timestamp as key
+                nickname: nickname.value,
+                message: message.value,
+                timestamp: Date.now() // Add timestamp to message data
+            })
+            .then(()=>{
+                alert("Thank you <3 Refresh the page to see your message.");
+            })
+            .catch((error)=>{
+                alert("Unsuccessful");
+                console.log(error);
+            })
+        }
+        
+        send.addEventListener('click', AddData);
+
+        
+        function GetMessages() {
+            const dbref = ref(db);
+
+            get(child(dbref, 'Messages')).then((messages)=>{
+                let sortedMessages = [];
+                messages.forEach(msg => {
+                    sortedMessages.push(msg);
+                });
+
+                // Sort messages by timestamp
+                sortedMessages.sort((a, b) => a.val().timestamp - b.val().timestamp);
+
+                // Add messages to the page
+                sortedMessages.forEach(msg => {
+                    AddMessageAsListItem(msg);
+                });
+            })
+        }
+
+            function AddMessageAsListItem(msg) {
+                let key = msg.key;
+                let value = msg.val();
+
+                let nickname = document.createElement('p');
+                let message = document.createElement('p');
+
+                nickname.innerHTML = value.nickname + ':';
+                message.innerHTML = value.message;
+
+                // Add this line to make the nickname bold
+                nickname.style.fontWeight = 'bold';
+
+                // Adjust the margin to reduce space after nickname and increase space after message
+                message.style.marginLeft= '10px'; // More space after message
+                
+                let ul = document.createElement('ul');
+                ul.classList.add('list-item'); // Add this line
+                ul.prepend(nickname, message);
+                MessageDiv.prepend(ul);
+                messagenro++;
+            }
+
+            window.addEventListener('load', GetMessages);
+
+        </script>
+
+        <script type="text/javascript" src="main.js"></script>
     </body>
 </html>

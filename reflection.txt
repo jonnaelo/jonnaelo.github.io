@@ -1,0 +1,34 @@
+
+
+
+HTML:
+
+- I used Photoshop batch to fit all images to 1080px.
+
+- My videos could be links to Youtube? Now they load a bit too long.
+
+CSS:
+
+- I added normalize.css 
+
+- I have a lot of CSS, some of it could be combined and optimised maybe.
+    At least it feels like there are a bit too many extra classes. 
+
+Responsiveness:
+
+- I added a middle version on top of the mobile one so that the font size looks nicer. 
+
+CSS Animation:
+
+- The original plan was to pixalate images on hover but I noticed that even if it looks cool it's nicer that the user can see the images at all times.
+
+- The images rotate and scale on hover. Every other one is supposed to rotate to the other direction but this stopped working after I added links on the images. 
+    I fixed it with doing the animation in js.
+
+Realtime database:
+
+- I used Firebase for the message box. All messages are recorded there and I can also delete them from the database if needed. 
+    The set up was fairly simple, the documentation is ok but I found Youtube having a lot of nice tutorials for it. In the future, 
+    it could be nice to use a free open source alternative. Firebase is stll free for this website as the traffic is so low.
+
+
