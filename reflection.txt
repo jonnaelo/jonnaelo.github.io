@@ -1,6 +1,3 @@
-
-
-
 HTML:
 
 - I used Photoshop batch to fit all images to 1080px.
@@ -31,4 +28,9 @@ Realtime database:
     The set up was fairly simple, the documentation is ok but I found Youtube having a lot of nice tutorials for it. In the future, 
     it could be nice to use a free open source alternative. Firebase is stll free for this website as the traffic is so low.
 
+Git: 
 
+- I used github pages to publish the website
+
+- It's nice to have vsc connected to git. I also learned a bit about using terminal to version control, but I think for my website I prefer vsc. 
+    I like using terminal for when I'm making games with other people. Usually then I would be adding art assets etc. while someone else is coding.  
