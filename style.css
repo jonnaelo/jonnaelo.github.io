@@ -123,7 +123,6 @@ svg:hover .svg-path-1 {
         justify-content: center;
     }
     .icons-buttons-container {
-        border: 1px solid black;
         flex-direction: column;
     }
     .filter-container {
